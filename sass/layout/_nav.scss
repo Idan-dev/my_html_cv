@@ -1,0 +1,14 @@
+.myNav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 4%;
+}
+
+.navBar {
+	word-spacing: 1em;
+	& a {
+		text-decoration: none;
+		color: black;
+	}
+}
