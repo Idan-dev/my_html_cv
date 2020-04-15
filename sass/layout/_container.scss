@@ -1,3 +1,15 @@
 .firstSection {
 	padding-bottom: 10%;
+	&__mainTitle {
+		padding-bottom: 3%;
+	}
+	&__secondTitle {
+		font-size: 1em;
+		color: $color-second-title;
+	}
+	&__text {
+		color:grey;
+		font-size: 0.9em;
+		padding-bottom: 3%;
+	}
 }

@@ -1,0 +1,36 @@
+.button {
+	font-family: 'montserratmedium', sans-serif;
+	font-size: 0.9em;
+	background: white;
+	color: rgb(60, 60, 60);
+	border-radius: 25px;
+	padding: 1.5% 5%;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	&__download {
+		border: 2px solid $color-download-button;
+		margin-right: 1%;
+		&:hover {
+			background: $color-download-button;
+			color: white;
+			transition: background 350ms , color 400ms;
+		}
+		&:focus {
+			outline-style: none;
+			box-shadow: 0 0 0 2px lightblue;
+		}
+	}
+	&__contact {
+		border: 2px solid lightgrey;
+		color: grey;
+		&:hover {
+			background: lightgrey;
+			color: black;
+			transition: background 350ms, color 400ms;
+		}
+		&:focus {
+			outline-style: none;
+			box-shadow: 0 0 0 2px lightblue;
+		}
+	}
+
+}

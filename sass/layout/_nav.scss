@@ -3,12 +3,54 @@
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 4%;
+	align-items: baseline;
 }
 
 .navBar {
-	word-spacing: 1em;
+	font-size: 0.9em;
+	word-spacing: 4em;
 	& a {
 		text-decoration: none;
-		color: black;
+		color: grey;
+		word-spacing: normal;
+		text-transform: capitalize;
 	}
+}
+
+.nameTitle {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.capitalLetter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid $color-i-initial;
+	height: 45px;
+	width: 45px;
+	border-radius: 45px;
+	font-size: 2em;
+	color: white;
+	background-color: $color-i-initial;
+	position: relative;
+	top: 3px;
+	&__I {
+	}
+}
+
+.fullname {
+	font-size: 1.4em;
+	padding-left: 4%;
+}
+
+.myName {
+	position: relative;
+	left: -13%;
+	width: 20%;
+}
+
+.nameAlign {
+	padding-top: 10%;
 }
