@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset='utf-8'/>
-		<link rel='stylesheet' href="css/style.css"/>
 		<link rel='stylesheet' href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+		<link rel='stylesheet' href="css/style.css"/>
 		<title>My Curriculum as a Web Developer</title>
 	</head>
 	<body class="myBody">
@@ -23,8 +23,8 @@
 		<header class='firstSection'>
 			<div class='container'>
 				<div class='row presentation'>
-					<div class='col-lg-4 offset-2 presentation__myPic'><img class='myPic' src='images/yellow_rose.jpg' alt='Une rose jaune'/></div>
-					<div class='col-lg-6 presentation__myJob'>
+					<div class='col-lg-4 offset-2 firstSection__myPic'><img class='myPic' src='images/my_pic_min.jpg' alt='Une rose jaune'/></div>
+					<div class='col-lg-6 firstSection__myJob'>
 						<h2 class='firstSection__secondTitle'>Web Developer</h2>
 						<h1 class='firstSection__mainTitle'>Idan Carta-Lag</h1>
 						<p class='firstSection__text'>New as a developer, Idan learnt how to shine by his distinguished sense of understanding how patterns and meaning intertwine. Fast, efficient, assiduous, Idan is always looking for knowledge in experience, trying to push further the limits between coding and understanding the world and life in their depths</p>
@@ -37,44 +37,145 @@
 			</div>
 		</header>
 		<section class='myResume'>
-			<div class='container'>
+			<div class='container-fluid myResume__container'>
 				<div class='row myResume__categories'>
-					<div class='col-6'>
-						<h3>Education</h3>
+					<div class='col-md-6 myResume__margin'>
+						<div class='myResume__title--categoryTitle'>
+							<h3 class='myResume__title'>Education</h3>
+							<div class='myResume__underlining'>
+								<div class='myResume__underlining--green'></div>
+							</div>
+						</div>
+
+						<!-- First Education -->
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__education'>
+								<p class='myResume__position'><span class='myResume__date'>2019</span> <span class='myResume__place'>OpenClassrooms</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Web Development</h4>
+									<p class='myResume__text'>In-deep learning and walkthrough the basics of development and more advanced skills</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End first education -->
+
+						<!-- Second Education -->
+
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__education'>
+								<p class='myResume__position'><span class='myResume__date'>2017</span> <span class='myResume__place'>Université Paris VIII - Saint Denis</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Master Degree in Philosophy</h4>
+									<p class='myResume__text'>Thorough analysis of Henri Bergson's work "L'évolution créatrice" putting in perspective the philosophical activity itself as a spiritual exercise</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End second education -->
+
+						<!-- Third Education -->
+
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__education'>
+								<p class='myResume__position'><span class='myResume__date'>2014</span> <span class='myResume__place'>Université Stendhal Grenoble III</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Bachelor Degree in Foreign Languages (English and Spanish)</h4>
+									<p class='myResume__text'>Language learning and basic notions of world economy, history and politics</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End third education -->
+
 					</div>
-					<div class='col-6'>
-						<h3>Experience</h3>
-					</div>
-				</div>
-				<div class='row myResume__content'>
-					<div class='col-6 myResume__education'>
-						<p><span class='date'>2019</span> <span class='place'>OpenClassrooms</span></p>
-						<h4>Web Development</h4>
-						<p class='content--text'>In-deep learning and walkthrough the basics of development and more advanced skills</p>
-					</div>
-					<div class='col-6 myResume__experience'>
-						<p><span class='date'>2019</span> <span class='place'>Home</span></p>
-						<h4>Web Development</h4>
-						<p class='content--text'>Development of a chat project using Node.js, Express.js and Socket-io</p>
+					<div class='col-md-6 myResume__margin'>
+						<div class='myResume__title--categoryTitle'>
+							<h3 class='myResume__title'>Experience</h3>
+							<div class='myResume__underlining'>
+								<div class='myResume__underlining--green'></div>
+							</div>
+						</div>
+
+						<!-- First Experience -->
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__experience'>
+								<p class='myResume__position'><span class='myResume__date'>2017 - 2019</span> <span class='myResume__place'>Marcelin Berthelot comprehensive school</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Pedagogical Assistant</h4>
+									<p class='myResume__text'>Student pedagogical support in coordination with the pedagogical team such as teachers and councelers</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End first experience -->
+
+						<!-- Second Experience -->
+
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__experience'>
+								<p class='myResume__position'><span class='myResume__date'>2018 - 2019</span> <span class='myResume__place'>N'R Hatorah High School</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Philosopy Teacher</h4>
+									<p class='myResume__text'>In charge of philosophy classes for end of study high school pupils</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End second experience -->
+
+						<!-- Third Experience -->
+
+						<div class='row myResume__box myResume__box--outlining'>
+							<div class='col myResume__experience'>
+								<p class='myResume__position'><span class='myResume__date'>2014 - 2018</span> <span class='myResume__place'>Complétude</span></p>
+								<div class='myResume__indent'>
+									<h4 class='myResume__title myResume__contentTitle'>Pedagogical Instructor</h4>
+									<p class='myResume__text'>Personal pedagogical support for pupils from comprehensive school to high school in English and Spanish classes</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- End of third experience -->
+
 					</div>
 				</div>
 				<div class='row myResume__categories'>
-					<div class='col-6'>
-						<h3>Soft Skills</h3>
-					</div>
-					<div class='col-6'>
-						<h3>Coding Skills</h3>
-					</div>
-				</div>
-				<div class='row myResume__skills'>
-					<div class= 'col-6 myResume__softSkills'>
-						<div class="skill set">
-							<h5>Communication</h5>
-							<p class="levelDigit"></p>
+					<div class='col-md-6 myResume__margin'>
+						<h3 class='myResume__title'>Soft Skills</h3>
+
+						<!-- Communication skill -->
+						<div class='row myResume__box'>
+							<div class= 'col myResume__softSkills'>
+								<div class="myResume__skillSet">
+									<h5 class='myResume__title myResume__contentTitle'>Communication</h5>
+									<p class="levelDigit"></p>
+								</div>
+								<div class="progressBar">
+									<div class="progressLevel"></div>
+								</div>
+							</div>
 						</div>
-						<div class="progressBar">
-							<div class="progressLevel"></div>
+
+						<!-- End communication skill -->
+					</div>
+					<div class='col-md-6 myResume__margin'>
+						<h3 class='myResume__title'>Coding Skills</h3>
+
+						<!-- HTML skill -->
+						<div class='row myResume__box'>
+							<div class= 'col myResume__skills'>
+								<div class="myResume__skillSet">
+									<h5 class='myResume__title myResume__contentTitle'>HTML</h5>
+									<p class="levelDigit"></p>
+								</div>
+								<div class="progressBar">
+									<div class="progressLevel"></div>
+								</div>
+							</div>
 						</div>
+
+						<!-- End HTML skill -->
 					</div>
 				</div>
 			</div>

@@ -4,6 +4,8 @@
 	justify-content: space-around;
 	padding: 4%;
 	align-items: baseline;
+	margin-left: -1%;
+	margin-top: -1%;
 }
 
 .navBar {
@@ -41,7 +43,7 @@
 }
 
 .fullname {
-	font-size: 1.4em;
+	font-size: 1.3em;
 	padding-left: 4%;
 }
 
@@ -49,8 +51,4 @@
 	position: relative;
 	left: -13%;
 	width: 20%;
-}
-
-.nameAlign {
-	padding-top: 10%;
 }

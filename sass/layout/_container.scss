@@ -1,7 +1,10 @@
 .firstSection {
+	margin-top: 5%;
 	padding-bottom: 10%;
 	&__mainTitle {
 		padding-bottom: 3%;
+		font-size: 3.2em;
+		color: $color-main-title;
 	}
 	&__secondTitle {
 		font-size: 1em;
@@ -11,5 +14,87 @@
 		color:grey;
 		font-size: 0.9em;
 		padding-bottom: 3%;
+	}
+	&__myPic {
+		right: 8%;
+		width: $picture-value;
+		height: $picture-value;
+		border-radius: 100%;
+		border: 18px solid white;
+		box-shadow: 0px 0px 20px 5px $color-box-shadow;
+		overflow: hidden;
+	}
+	&__myJob {
+		padding-top: 4%;
+		right: 4%;
+	}
+}
+
+.myResume {
+	&__container {
+		padding: 2.5%;
+		margin-left: 2.5%;
+	}
+	&__box {
+		height: 30%;
+		padding-top: 4%;
+		&--outlining {
+			border-left: 2px solid lightgrey;
+			border-bottom: 2px solid lightgrey;
+			margin-left: 4%;
+		}
+	}
+	&__categories {
+		width: 100%;
+	}
+	&__margin {
+		margin-bottom: 10%;
+		&:nth-last-child(-n+2) {
+			margin-top: 4%;
+		}
+	}
+	&__position {
+		position: relative;
+		right: 7%;
+	}
+	&__date {
+		border: 2px solid $color-download-button;
+		padding: 1.5% 3%;
+		border-radius: 25px;
+		background: white;
+		font-size: 0.8em;
+		font-weight: 600;
+		color: grey;
+	}
+	&__place {
+		color: $color-second-title;
+		font-size: 0.9em;
+	}
+	&__indent {
+		padding-left: 5%;
+	}
+	&__title {
+		font-size: 1em;
+		font-weight: 700;
+		&--categoryTitle {
+			margin-bottom: 8%;
+			font-size: 1.4em
+		}
+	}
+	&__text {
+		color: grey;
+	}
+	&__underlining {
+		background: lightgrey;
+		border: none;
+		border-radius: 25px;
+		width: 115px;
+		height: 2.5px;
+		display: flex;
+		justify-content: flex-start;
+		&--green {
+			background: $color-download-button;
+			width: 30%;
+		}
 	}
 }

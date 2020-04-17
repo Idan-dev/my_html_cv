@@ -35,6 +35,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "montserratblack";
+  src: url("fonts/montserrat-black-webfont.eot");
+  src: url("fonts/montserrat-black-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-black-webfont.woff2") format("woff2"), url("fonts/montserrat-black-webfont.woff") format("woff"), url("fonts/montserrat-black-webfont.ttf") format("truetype"), url("fonts/montserrat-black-webfont.svg#montserratblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "open_sansbold";
   src: url("fonts/opensans-bold-webfont.eot");
   src: url("fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff"), url("fonts/opensans-bold-webfont.ttf") format("truetype"), url("fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
@@ -111,12 +118,47 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "robotobold";
+  src: url("fonts/roboto-bold-webfont.eot");
+  src: url("fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/roboto-bold-webfont.woff2") format("woff2"), url("fonts/roboto-bold-webfont.woff") format("woff"), url("fonts/roboto-bold-webfont.ttf") format("truetype"), url("fonts/roboto-bold-webfont.svg#robotobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotolight";
+  src: url("fonts/roboto-light-webfont.eot");
+  src: url("fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/roboto-light-webfont.woff2") format("woff2"), url("fonts/roboto-light-webfont.woff") format("woff"), url("fonts/roboto-light-webfont.ttf") format("truetype"), url("fonts/roboto-light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotomedium";
+  src: url("fonts/roboto-medium-webfont.eot");
+  src: url("fonts/roboto-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/roboto-medium-webfont.woff2") format("woff2"), url("fonts/roboto-medium-webfont.woff") format("woff"), url("fonts/roboto-medium-webfont.ttf") format("truetype"), url("fonts/roboto-medium-webfont.svg#robotomedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/roboto-regular-webfont.eot");
+  src: url("fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/roboto-regular-webfont.woff2") format("woff2"), url("fonts/roboto-regular-webfont.woff") format("woff"), url("fonts/roboto-regular-webfont.ttf") format("truetype"), url("fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "muliregular";
+  src: url("fonts/muli-variablefont_wght-webfont.eot");
+  src: url("fonts/muli-variablefont_wght-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/muli-variablefont_wght-webfont.woff2") format("woff2"), url("fonts/muli-variablefont_wght-webfont.woff") format("woff"), url("fonts/muli-variablefont_wght-webfont.ttf") format("truetype"), url("fonts/muli-variablefont_wght-webfont.svg#muliregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .myBody {
   font-family: "open_sansregular", sans-serif;
 }
 
 .myName {
-  font-family: "latoregular", sans-serif;
+  font-family: "robotoregular", sans-serif;
 }
 
 .navBar {
@@ -124,27 +166,28 @@
 }
 
 .capitalLetter {
-  font-family: "latoblack", sans-serif;
+  font-family: "montserratblack", sans-serif;
 }
 
 .firstname {
-  font-family: "latobold", sans-serif;
+  font-family: "robotobold", sans-serif;
 }
 
 .firstSection__mainTitle {
-  font-family: "open_sansbold", sans-serif;
+  font-family: "robotobold", sans-serif;
 }
 
 .firstSection__text {
   font-family: "montserratmedium", sans-serif;
 }
 
+.myResume {
+  font-family: "muliregular", sans-serif;
+}
+
 .myPic {
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  border: 18px solid white;
-  box-shadow: inset 0px 0px 50px 10px #edeeee, 0px 0px 10px 10px #edeeee;
+  position: relative;
+  right: 5%;
 }
 
 .button {
@@ -189,6 +232,8 @@
   justify-content: space-around;
   padding: 4%;
   align-items: baseline;
+  margin-left: -1%;
+  margin-top: -1%;
 }
 
 .navBar {
@@ -223,7 +268,7 @@
   top: 3px;
 }
 .fullname {
-  font-size: 1.4em;
+  font-size: 1.3em;
   padding-left: 4%;
 }
 
@@ -233,15 +278,14 @@
   width: 20%;
 }
 
-.nameAlign {
-  padding-top: 10%;
-}
-
 .firstSection {
+  margin-top: 5%;
   padding-bottom: 10%;
 }
 .firstSection__mainTitle {
   padding-bottom: 3%;
+  font-size: 3.2em;
+  color: #3c3c3c;
 }
 .firstSection__secondTitle {
   font-size: 1em;
@@ -251,6 +295,86 @@
   color: grey;
   font-size: 0.9em;
   padding-bottom: 3%;
+}
+.firstSection__myPic {
+  right: 8%;
+  width: 370px;
+  height: 370px;
+  border-radius: 100%;
+  border: 18px solid white;
+  box-shadow: 0px 0px 20px 5px #edeeee;
+  overflow: hidden;
+}
+.firstSection__myJob {
+  padding-top: 4%;
+  right: 4%;
+}
+
+.myResume__container {
+  padding: 2.5%;
+  margin-left: 2.5%;
+}
+.myResume__box {
+  height: 30%;
+  padding-top: 4%;
+}
+.myResume__box--outlining {
+  border-left: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  margin-left: 4%;
+}
+.myResume__categories {
+  width: 100%;
+}
+.myResume__margin {
+  margin-bottom: 10%;
+}
+.myResume__margin:nth-last-child(-n+2) {
+  margin-top: 4%;
+}
+.myResume__position {
+  position: relative;
+  right: 7%;
+}
+.myResume__date {
+  border: 2px solid #56C7A1;
+  padding: 1.5% 3%;
+  border-radius: 25px;
+  background: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: grey;
+}
+.myResume__place {
+  color: #b4b4b4;
+  font-size: 0.9em;
+}
+.myResume__indent {
+  padding-left: 5%;
+}
+.myResume__title {
+  font-size: 1em;
+  font-weight: 700;
+}
+.myResume__title--categoryTitle {
+  margin-bottom: 8%;
+  font-size: 1.4em;
+}
+.myResume__text {
+  color: grey;
+}
+.myResume__underlining {
+  background: lightgrey;
+  border: none;
+  border-radius: 25px;
+  width: 115px;
+  height: 2.5px;
+  display: flex;
+  justify-content: flex-start;
+}
+.myResume__underlining--green {
+  background: #56C7A1;
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
