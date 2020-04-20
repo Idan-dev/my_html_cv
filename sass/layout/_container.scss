@@ -26,6 +26,7 @@
 		overflow: hidden;
 		@include medium-large_screen {
 			margin: auto;
+			right: 0;
 		}
 		@include medium_screen {
 			display: none;

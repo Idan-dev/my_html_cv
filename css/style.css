@@ -326,6 +326,7 @@
 @media (max-width: 1199px) {
   .firstSection__myPic {
     margin: auto;
+    right: 0;
   }
 }
 @media (max-width: 900px) {
