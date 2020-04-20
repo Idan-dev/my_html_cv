@@ -18,11 +18,18 @@
 	&__myPic {
 		right: 8%;
 		width: $picture-value;
+		min-width: $picture-value;
 		height: $picture-value;
 		border-radius: 100%;
 		border: 18px solid white;
 		box-shadow: 0px 0px 20px 5px $color-box-shadow;
 		overflow: hidden;
+		@include medium-large_screen {
+			margin: auto;
+		}
+		@include medium_screen {
+			display: none;
+		}
 	}
 	&__myJob {
 		padding-top: 4%;
@@ -32,16 +39,23 @@
 
 .myResume {
 	&__container {
-		padding: 2.5%;
+		padding: 3%;
 		margin-left: 2.5%;
 	}
 	&__box {
 		height: 30%;
-		padding-top: 4%;
 		&--outlining {
-			border-left: 2px solid lightgrey;
-			border-bottom: 2px solid lightgrey;
-			margin-left: 4%;
+			border-left: 1px solid $color-outlining;
+			border-bottom: 1px solid $color-outlining;
+			margin-left: 3%;
+			padding-top: 4%;
+		}
+		&--first {
+			padding-top: 1%;
+		}
+		&--skills {
+			height: 40px;
+			margin-bottom: 1%;
 		}
 	}
 	&__categories {
@@ -49,43 +63,48 @@
 	}
 	&__margin {
 		margin-bottom: 10%;
-		&:nth-last-child(-n+2) {
-			margin-top: 4%;
-		}
 	}
 	&__position {
 		position: relative;
-		right: 7%;
+		right: 5.5%;
 	}
 	&__date {
 		border: 2px solid $color-download-button;
-		padding: 1.5% 3%;
+		padding: 0.75% 1.5%;
 		border-radius: 25px;
 		background: white;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-weight: 600;
 		color: grey;
 	}
 	&__place {
 		color: $color-second-title;
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 	&__indent {
-		padding-left: 5%;
+		padding-left: 1.5%;
+		padding-bottom: 1.5%;
 	}
 	&__title {
 		font-size: 1em;
 		font-weight: 700;
 		&--categoryTitle {
-			margin-bottom: 8%;
-			font-size: 1.4em
+			font-size: 1.3em;
+			background: white;
+			height: 60px;
+		}
+		&--content {
+			font-size: 0.8em;
 		}
 	}
 	&__text {
 		color: grey;
+		font-size: 0.9em;
+		letter-spacing: 0.0005em;
+		word-spacing: 0.005em;
 	}
 	&__underlining {
-		background: lightgrey;
+		background: $color-outlining;
 		border: none;
 		border-radius: 25px;
 		width: 115px;
@@ -96,5 +115,50 @@
 			background: $color-download-button;
 			width: 30%;
 		}
+	}
+	&__skillSet {
+		display: flex;
+		justify-content: space-between;
+		height: 22px;
+	}
+	&__progressBar {
+		background: white;
+		border: 2px solid lightgrey;
+		border-radius: 25px;
+		width: 100%;
+		height: 13px;
+		padding: 2px;
+		display: flex;
+		justify-content: flex-start;
+	}
+	&__progressLevel {
+		&--comm {
+			@include progressLevel(75%);
+		}
+		&--html {
+			@include progressLevel(90%);
+		}
+		&--tmwork {
+			@include progressLevel(75%);
+		}
+		&--bsnss {
+			@include progressLevel(45%);
+		}
+		&--emInt {
+			@include progressLevel(70%);
+		}
+		&--js {
+			@include progressLevel(50%);
+		}
+		&--node {
+			@include progressLevel(30%);
+		}
+		&--mysql {
+			@include progressLevel(2%);
+		}
+	}
+	&__levelDigit {
+		font-size: 0.75em;
+		color: $color-second-title;
 	}
 }

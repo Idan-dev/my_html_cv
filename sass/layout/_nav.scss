@@ -17,12 +17,21 @@
 		word-spacing: normal;
 		text-transform: capitalize;
 	}
+	@include medium_screen {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+	}
 }
 
 .nameTitle {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
+	@include medium_screen {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .capitalLetter {
@@ -31,20 +40,21 @@
 	align-items: center;
 	border: 2px solid $color-i-initial;
 	height: 45px;
+	min-height: 45px;
 	width: 45px;
+	min-width: 45px;
 	border-radius: 45px;
 	font-size: 2em;
 	color: white;
 	background-color: $color-i-initial;
 	position: relative;
 	top: 3px;
-	&__I {
-	}
 }
 
 .fullname {
 	font-size: 1.3em;
 	padding-left: 4%;
+	white-space: nowrap;
 }
 
 .myName {

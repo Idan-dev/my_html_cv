@@ -5,6 +5,11 @@ $color-box-shadow: rgb(237, 238, 238);
 $color-download-button: #56C7A1;
 $color-main-title: rgb(60, 60, 60);
 $color-second-title: rgb(180, 180, 180);
-
+$color-outlining: rgb(245, 245, 245);
+$color-box-hover: rgb(20, 20, 20);
 
 $picture-value: 370px;
+
+$breakpoints: (
+	first: 1199px,
+	second: 900px);

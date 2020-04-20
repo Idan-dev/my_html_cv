@@ -1,0 +1,17 @@
+@mixin progressLevel($percentage) {
+	width: $percentage;
+	background: $color-download-button;
+	border-radius: 25px;
+}
+
+@mixin medium-large_screen {
+	@media (max-width: map-get($breakpoints, first)) {
+		@content
+	}
+}
+
+@mixin medium_screen {
+	@media (max-width: map-get($breakpoints, second)) {
+		@content
+	}
+}
