@@ -11,5 +11,7 @@ $color-box-hover: rgb(20, 20, 20);
 $picture-value: 370px;
 
 $breakpoints: (
-	first: 1199px,
-	second: 900px);
+	large: 1199px,
+	medium: 900px,
+	small: 579px,
+	very-small: 450px);

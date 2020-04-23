@@ -4,7 +4,12 @@
 	&__mainTitle {
 		padding-bottom: 3%;
 		font-size: 3.2em;
+		font-weight: 700;
 		color: $color-main-title;
+		@include very-small_screen {
+			font-weight: 400;
+			font-style: italic;
+		}
 	}
 	&__secondTitle {
 		font-size: 1em;
@@ -35,6 +40,9 @@
 	&__myJob {
 		padding-top: 4%;
 		right: 4%;
+		@include small_screen {
+			padding-left: 10%;
+		}
 	}
 }
 

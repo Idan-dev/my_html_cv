@@ -174,7 +174,7 @@
 }
 
 .firstSection__mainTitle {
-  font-family: "robotobold", sans-serif;
+  font-family: "muliregular", sans-serif;
 }
 
 .firstSection__text {
@@ -235,6 +235,13 @@
   margin-left: -1%;
   margin-top: -1%;
 }
+@media (max-width: 450px) {
+  .myNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .navBar {
   font-size: 0.9em;
@@ -251,6 +258,11 @@
     display: flex;
     flex-direction: column;
     align-self: flex-end;
+  }
+}
+@media (max-width: 450px) {
+  .navBar {
+    align-self: auto;
   }
 }
 
@@ -294,6 +306,11 @@
   left: -13%;
   width: 20%;
 }
+@media (max-width: 450px) {
+  .myName {
+    left: 0;
+  }
+}
 
 .firstSection {
   margin-top: 5%;
@@ -302,7 +319,14 @@
 .firstSection__mainTitle {
   padding-bottom: 3%;
   font-size: 3.2em;
+  font-weight: 700;
   color: #3c3c3c;
+}
+@media (max-width: 450px) {
+  .firstSection__mainTitle {
+    font-weight: 400;
+    font-style: italic;
+  }
 }
 .firstSection__secondTitle {
   font-size: 1em;
@@ -337,6 +361,11 @@
 .firstSection__myJob {
   padding-top: 4%;
   right: 4%;
+}
+@media (max-width: 579px) {
+  .firstSection__myJob {
+    padding-left: 10%;
+  }
 }
 
 .myResume__container {
